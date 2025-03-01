@@ -8,7 +8,7 @@ const Backendend = () => {
       <div className="skills__box">
         <div className="skills__group">
           <div className="skill__data">
-            <i className="bx bx-brade-check"></i>
+            <i className="bx bx-bradge-check"></i>
 
             <div className="">
               <h3 className="skills__name">PHP</h3>
@@ -16,7 +16,7 @@ const Backendend = () => {
             </div>
           </div>
           <div className="skill__data">
-            <i className="bx bx-brade-check"></i>
+            <i className="bx bx-bradge-check"></i>
 
             <div className="">
               <h3 className="skills__name">MySQL</h3>
@@ -24,7 +24,7 @@ const Backendend = () => {
             </div>
           </div>
           <div className="skill__data">
-            <i className="bx bx-brade-check"></i>
+            <i className="bx bx-bradge-check"></i>
 
             <div className="">
               <h3 className="skills__name">Laravel</h3>
@@ -35,7 +35,7 @@ const Backendend = () => {
 
         <div className="skills__group">
           <div className="skill__data">
-            <i className="bx bx-brade-check"></i>
+            <i className="bx bx-bradge-check"></i>
 
             <div className="">
               <h3 className="skills__name">NodeJS</h3>
@@ -43,7 +43,7 @@ const Backendend = () => {
             </div>
           </div>
           <div className="skill__data">
-            <i className="bx bx-brade-check"></i>
+            <i className="bx bx-bradge-check"></i>
 
             <div className="">
               <h3 className="skills__name">MongoDB</h3>
@@ -51,7 +51,7 @@ const Backendend = () => {
             </div>
           </div>
           <div className="skill__data">
-            <i className="bx bx-brade-check"></i>
+            <i className="bx bx-bradge-check"></i>
 
             <div className="">
               <h3 className="skills__name">PostgreSQL</h3>
