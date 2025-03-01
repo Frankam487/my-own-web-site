@@ -3,7 +3,7 @@ import React from 'react';
 const Backendend = () => {
   return (
     <div className="skills__content">
-      <h3 className="skills__title"></h3>
+      <h3 className="skills__title">Developpeur Back-End</h3>
 
       <div className="skills__box">
         <div className="skills__group">
@@ -11,27 +11,24 @@ const Backendend = () => {
             <i className="bx bx-brade-check"></i>
 
             <div className="">
-              <h3 className="skills__name">
-                <span className="skills__level"></span>
-              </h3>
+              <h3 className="skills__name">PHP</h3>
+              <span className="skills__level">Intermediaire</span>
             </div>
           </div>
           <div className="skill__data">
             <i className="bx bx-brade-check"></i>
 
             <div className="">
-              <h3 className="skills__name">
-                <span className="skills__level"></span>
-              </h3>
+              <h3 className="skills__name">MySQL</h3>
+              <span className="skills__level">Intermediaire</span>
             </div>
           </div>
           <div className="skill__data">
             <i className="bx bx-brade-check"></i>
 
             <div className="">
-              <h3 className="skills__name">
-                <span className="skills__level"></span>
-              </h3>
+              <h3 className="skills__name">Laravel</h3>
+              <span className="skills__level">Intermediaire</span>
             </div>
           </div>
         </div>
@@ -41,27 +38,24 @@ const Backendend = () => {
             <i className="bx bx-brade-check"></i>
 
             <div className="">
-              <h3 className="skills__name">
-                <span className="skills__level"></span>
-              </h3>
+              <h3 className="skills__name">NodeJS</h3>
+              <span className="skills__level">Basique</span>
             </div>
           </div>
           <div className="skill__data">
             <i className="bx bx-brade-check"></i>
 
             <div className="">
-              <h3 className="skills__name">
-                <span className="skills__level"></span>
-              </h3>
+              <h3 className="skills__name">MongoDB</h3>
+              <span className="skills__level"></span>
             </div>
           </div>
           <div className="skill__data">
             <i className="bx bx-brade-check"></i>
 
             <div className="">
-              <h3 className="skills__name">
-                <span className="skills__level"></span>
-              </h3>
+              <h3 className="skills__name">PostgreSQL</h3>
+              <span className="skills__level">Basique</span>
             </div>
           </div>
         </div>
