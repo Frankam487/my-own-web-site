@@ -1,12 +1,12 @@
-.qualif__calender {
-/* background-color: red; */
+ /* .qualif__calender {
+
   max-width: 768px;
 }
 .qualif__tabs{
   display: flex;
   justify-content: center;
   margin-bottom: var(--mb-2);
-  /* background-color: red; */
+
 }
 .qualif__button{
   font-size: var(--h3-font-size);
@@ -74,4 +74,207 @@
   height: 100%;
 
   transform: translate(6px, -7px);
+}
+
+
+
+
+.qualif__content {
+  display: none;
+}
+
+.qualif__content-active {
+  display: block;
+}
+
+.qualif__button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.qualif__active {
+  border-bottom: 2px solid #020b14;
+  font-weight: bold;
+} 
+ */
+
+
+ /* ==================== QUALIFICATION SECTION ==================== */
+.qualif {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+/* ===== TITRES ===== */
+.section__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section__subtitle {
+  font-size: 1.2rem;
+  color: var(--text-color-light);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+/* ==================== TABS ==================== */
+.qualif__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.qualif__button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--title-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.qualif__button:hover {
+  color: var(--primary-color);
+}
+
+.qualif__active {
+  color: var(--primary-color);
+  font-weight: bold;
+  position: relative;
+}
+
+.qualif__active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 50%;
+  height: 3px;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* ==================== CONTENU DES SECTIONS ==================== */
+.qualif__sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.qualif__content {
+  width: 100%;
+  max-width: 600px;
+  display: none;
+}
+
+.qualif__content-active {
+  display: block;
+}
+
+/* ==================== TIMELINE ==================== */
+.qualif__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.qualif__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.qualif__subtitle {
+  font-size: 1rem;
+  color: var(--text-color-light);
+}
+
+.qualif__calendar {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* background-color: red; */
+}
+
+.qualif__icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+
+.qualif__timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.qualif__rounder {
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+}
+
+.qualif__line {
+  width: 2px;
+  height: 100%;
+  background-color: var(--primary-color);
+  display: block;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+  .qualif__tabs {
+    gap: 1rem;
+  }
+.qualif__calendar{
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+  .qualif__button {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .qualif__data {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .qualif__timeline {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .section__title {
+    font-size: 1.8rem;
+  }
+
+  .section__subtitle {
+    font-size: 1rem;
+  }
+
+  .qualif__button {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+  }
 }
