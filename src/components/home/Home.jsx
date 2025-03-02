@@ -2,6 +2,7 @@
 import "./home.css";
 const Home = () => {
   return (
+    
     <section className="home">
       <div className="home-hero">
         <div className="text">
