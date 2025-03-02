@@ -1,6 +1,6 @@
-import Img1 from "./clouds.jpg";
-import Img2 from "./clouds.jpg";
-import Img3 from "./clouds.jpg";
+import Img1 from "../../assets/clouds.jpg";
+import Img2 from "../../assets/clouds.jpg";
+import Img3 from "../../assets/clouds.jpg";
 
 
 export const Data = [
@@ -26,15 +26,3 @@ export const Data = [
       "j'aime beaucoup la facon dont tu design tes applications web BRAVO!!!",
   },
 ];
-
-
-const Data = () => {
-
-  return (
-    <div>
-      h
-    </div>
-  );
-};
-
-export default Data;
