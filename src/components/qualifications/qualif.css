@@ -107,7 +107,6 @@
   padding: 3rem 1rem;
 }
 
-/* ===== TITRES ===== */
 .section__title {
   font-size: 2rem;
   font-weight: 700;
@@ -121,7 +120,7 @@
   display: block;
 }
 
-/* ==================== TABS ==================== */
+
 .qualif__tabs {
   display: flex;
   justify-content: center;
@@ -162,7 +161,6 @@
   border-radius: 2px;
 }
 
-/* ==================== CONTENU DES SECTIONS ==================== */
 .qualif__sections {
   display: flex;
   justify-content: center;
@@ -180,7 +178,7 @@
   display: block;
 }
 
-/* ==================== TIMELINE ==================== */
+
 .qualif__data {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
@@ -239,7 +237,7 @@
   display: block;
 }
 
-/* ==================== RESPONSIVE DESIGN ==================== */
+
 @media screen and (max-width: 768px){
   .qualif__sections{
     grid-template-columns: initial;
