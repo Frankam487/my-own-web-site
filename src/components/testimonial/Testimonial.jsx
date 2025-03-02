@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Data } from "./Data"; // Assure-toi que le fichier Data.js existe
+import "swiper/css/navigation";
+import { Data } from "./Data";
 import "./testimonial.css";
 
 const Testimonial = () => {
@@ -17,13 +18,16 @@ const Testimonial = () => {
         className="testi__container"
         loop={true}
         grabCursor={true}
-        spaceBetween={10}
-        pagination={{ clickable: true }}
+        spaceBetween={20}
+        pagination={{ clickable: true, dynamicBullets: true }} // ✅ Ajout de la pagination interactive
+        navigation={true} // ✅ Ajout des flèches de navigation
         breakpoints={{
-          576: { slidesPerView: 2 },
-          768: { slidesPerView: 2, spaceBetween: 48 },
+          320: { slidesPerView: 1, spaceBetween: 10 },
+          576: { slidesPerView: 1, spaceBetween: 15 },
+          768: { slidesPerView: 2, spaceBetween: 20 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]} // ✅ Ajout des modules Pagination + Navigation
       >
         {Data.map(({ id, image, title, description }) => (
           <SwiperSlide className="testi__card" key={id}>

@@ -1,13 +1,16 @@
 .testi__container {
   width: 750px;
-}.testi {
+}
+
+.testi {
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 .testi__container {
-  max-width: 800px;
+  max-width: 100%;
   margin: auto;
+  position: relative;
 }
 
 .testi__card {
@@ -16,21 +19,121 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testi__card:hover {
+  transform: scale(1.05);
 }
 
 .testi__img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin-bottom: 10px;
+  object-fit: cover;
 }
 
 .testi__name {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .testi__description {
   font-size: 14px;
   color: #666;
+  padding: 0 10px;
 }
+
+/* ✅ Personnalisation des flèches Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+}
+
+/* ✅ Pagination dynamique */
+.swiper-pagination-bullet {
+  background-color: #bbb !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #007bff !important;
+  opacity: 1;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .testi {
+    padding: 20px 10px;
+  }
+  .testi__card {
+    padding: 15px;
+  }
+  .testi__img {
+    width: 50px;
+    height: 50px;
+  }
+  .testi__name {
+    font-size: 16px;
+  }
+  .testi__description {
+    font-size: 13px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* ❌ On cache les flèches sur mobile */
+  }
+}
+/* ✅ Personnalisation des flèches Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333 !important; /* Couleur par défaut */
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.1); /* Légère transparence */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Effet au survol */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: white !important;
+}
+
+/* ✅ Effet au clic */
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  background: #007bff; /* Bleu actif */
+  color: white !important;
+  transform: scale(0.9); /* Effet de clic */
+}
+
+/* ✅ Personnalisation des icônes */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+/* ✅ Responsive : cacher les flèches sur mobile */
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
