@@ -141,11 +141,11 @@
 }
 
 .qualif__button:hover {
-  color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.393);
 }
 
 .qualif__active {
-  color: var(--primary-color);
+  color: rgba(4, 14, 46, 0.528);
   font-weight: bold;
   position: relative;
 }
@@ -155,9 +155,9 @@
   position: absolute;
   bottom: -5px;
   left: 50%;
-  width: 50%;
+  width: 90%;
   height: 3px;
-  background-color: var(--primary-color);
+  background-color: rgb(58, 56, 56);
   transform: translateX(-50%);
   border-radius: 2px;
 }
@@ -198,21 +198,21 @@
 
 .qualif__subtitle {
   font-size: 1rem;
-  color: var(--text-color-light);
+  color: rgb(18, 16, 16);
 }
 
 .qualif__calendar {
   font-size: 0.9rem;
-  color: var(--primary-color);
+  color: rgba(35, 31, 31, 0.983);
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  /* background-color: red; */
+ 
 }
 
 .qualif__icon {
   font-size: 1.5rem;
-  color: var(--primary-color);
+  color: rgb(4, 26, 62);
 }
 
 
@@ -227,20 +227,35 @@
 .qualif__rounder {
   width: 12px;
   height: 12px;
-  background-color: var(--primary-color);
+  background-color: rgb(0, 0, 0);
   border-radius: 50%;
   position: relative;
 }
 
 .qualif__line {
   width: 2px;
-  height: 100%;
-  background-color: var(--primary-color);
+  height: 180px;
+  background-color: rgb(13, 11, 11);
   display: block;
 }
 
 /* ==================== RESPONSIVE DESIGN ==================== */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px){
+  .qualif__sections{
+    grid-template-columns: initial;
+  }
+}
+@media screen and (max-width: 350px) {
+  .qualif__data{
+    gap: .5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .qualif__button{
+    margin: 0 var(--mb-0-75);
+  }
+}
+@media screen and (max-width: 768px) {
   .qualif__tabs {
     gap: 1rem;
   }
