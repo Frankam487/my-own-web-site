@@ -1,4 +1,4 @@
-.about__container{
+ .about__container{
  display: grid;
  grid-template-columns: repeat(2, 1fr);
  align-items: center;
@@ -69,4 +69,5 @@
 }
 @media screen and (max-width: 350px){
  
-}
+} 
+ 

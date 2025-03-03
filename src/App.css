@@ -156,3 +156,8 @@ img {
     margin-right: var(--mb-1);
   }
 }
+
+*{
+  /* border: 1px solid red; */
+  /* overflow-x: hidden; */
+}
