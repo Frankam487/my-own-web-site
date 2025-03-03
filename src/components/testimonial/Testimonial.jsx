@@ -19,15 +19,15 @@ const Testimonial = () => {
         loop={true}
         grabCursor={true}
         spaceBetween={20}
-        pagination={{ clickable: true, dynamicBullets: true }} // ✅ Ajout de la pagination interactive
-        navigation={true} // ✅ Ajout des flèches de navigation
+        pagination={{ clickable: true, dynamicBullets: true }}
+        navigation={true} 
         breakpoints={{
           320: { slidesPerView: 1, spaceBetween: 10 },
           576: { slidesPerView: 1, spaceBetween: 15 },
           768: { slidesPerView: 2, spaceBetween: 20 },
           1024: { slidesPerView: 3, spaceBetween: 30 },
         }}
-        modules={[Pagination, Navigation]} // ✅ Ajout des modules Pagination + Navigation
+        modules={[Pagination, Navigation]}
       >
         {Data.map(({ id, image, title, description }) => (
           <SwiperSlide className="testi__card" key={id}>
