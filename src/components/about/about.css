@@ -41,7 +41,7 @@
   .about__img{
     width: 220px;
   }
-
+  
   .about__box{
     padding: 0.75rem 0.5rem;
   }
@@ -68,6 +68,8 @@
   
 }
 @media screen and (max-width: 350px){
- 
+  
 } 
- 
+.about__data a {
+  background: linear-gradient(225deg, #312f26fa, #00e1ff);
+}
