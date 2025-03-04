@@ -185,44 +185,7 @@ border: 4px solid rgba(21, 23, 23, 0.309);
   to { opacity: 1; transform: translateY(0); }
 }
 
-.icons {
-  position: fixed;
-  left: 20px;
-  top: 55%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  z-index: 1000;
-}
 
-.icons a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-} 
- .icons i {
-  font-size: 1.5rem;
-  color: white;
-  transition: transform 0.3s ease-in-out, color 0.3s;
-}
-
-.icons a:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 20px rgba(255, 204, 0, 0.7);
-}
-
-.icons a:hover i {
-  color: #ffcc00;
-  transform: rotate(10deg);
-}
 
 
 @media (max-width: 768px) {
