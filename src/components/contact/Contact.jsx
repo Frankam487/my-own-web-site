@@ -1,4 +1,5 @@
 import "./Contact.css";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
   return (
     <section className="contact container section" id="contact">
